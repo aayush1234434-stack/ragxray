@@ -19,6 +19,10 @@ RAG pipelines fail in structured, repeatable ways. Instead of eyeballing outputs
 4. Classifies each failure using an **LLM-as-judge** into a 4-category taxonomy
 5. Logs everything to **W&B Tables** with regression detection vs baseline runs
 6. Surfaces patterns via a **Streamlit dashboard**
+<<<<<<< HEAD
+=======
+
+>>>>>>> a614b13a (add README preview images)
 ---
 
 ## Evaluation Metrics
@@ -38,6 +42,12 @@ RAG pipelines fail in structured, repeatable ways. Instead of eyeballing outputs
 ---
 
 ## Failure Taxonomy
+<<<<<<< HEAD
+=======
+
+![Metrics](assets/metrics_row.png)
+
+>>>>>>> a614b13a (add README preview images)
 | Category | Count | Description |
 |---|---|---|
 | ✅ PASS | 13 | Answer correct and grounded in context |

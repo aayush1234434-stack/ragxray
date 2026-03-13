@@ -24,7 +24,6 @@ RAG pipelines fail in structured, repeatable ways. Instead of eyeballing outputs
 ## Evaluation Metrics
 
 <!-- SCREENSHOT: Crop the top metrics row from the dashboard -->
-![Metrics](assets/metrics_row.png)
 
 | Metric | Run: hybrid/faithful |
 |---|---|

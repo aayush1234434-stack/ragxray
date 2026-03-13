@@ -22,9 +22,6 @@ RAG pipelines fail in structured, repeatable ways. Instead of eyeballing outputs
 <<<<<<< HEAD
 =======
 
->>>>>>> a614b13a (add README preview images)
----
-
 ## Evaluation Metrics
 
 <!-- SCREENSHOT: Crop the top metrics row from the dashboard -->

@@ -19,14 +19,6 @@ RAG pipelines fail in structured, repeatable ways. Instead of eyeballing outputs
 4. Classifies each failure using an **LLM-as-judge** into a 4-category taxonomy
 5. Logs everything to **W&B Tables** with regression detection vs baseline runs
 6. Surfaces patterns via a **Streamlit dashboard**
-
----
-
-## Dashboard
-
-<!-- SCREENSHOT: Run `streamlit run dashboard/app.py` and take a full-page screenshot here -->
-![Dashboard](assets/dashboard.png)
-
 ---
 
 ## Evaluation Metrics
@@ -46,10 +38,6 @@ RAG pipelines fail in structured, repeatable ways. Instead of eyeballing outputs
 ---
 
 ## Failure Taxonomy
-
-<!-- SCREENSHOT: Crop the pie chart + taxonomy cards from the dashboard -->
-![Failure Distribution](assets/failure_distribution.png)
-
 | Category | Count | Description |
 |---|---|---|
 | ✅ PASS | 13 | Answer correct and grounded in context |
@@ -61,9 +49,6 @@ RAG pipelines fail in structured, repeatable ways. Instead of eyeballing outputs
 ---
 
 ## Prompt × Retriever Sweep
-
-<!-- SCREENSHOT: Crop the sweep bar chart from the dashboard -->
-![Sweep Results](assets/sweep.png)
 
 | Config | Pass Rate |
 |---|---|
@@ -81,7 +66,6 @@ RAG pipelines fail in structured, repeatable ways. Instead of eyeballing outputs
 ## Sample Per-Query Output
 
 <!-- SCREENSHOT: Crop the results table from the dashboard -->
-![Results Table](assets/results_table.png)
 
 ```json
 {

@@ -1,0 +1,12 @@
+[
+  {"id": "q001", "query": "What is retrieval-augmented generation?", "ground_truth": "RAG combines a retrieval system with a language model to generate answers grounded in retrieved documents."},
+  {"id": "q002", "query": "What causes hallucination in RAG pipelines?", "ground_truth": "Hallucination occurs when the model generates information not supported by the retrieved context."},
+  {"id": "q003", "query": "What is retrieval drift?", "ground_truth": "Retrieval drift occurs when retrieved chunks are topically related but do not contain the answer."},
+  {"id": "q004", "query": "How does BM25 work?", "ground_truth": "BM25 ranks documents based on term frequency and inverse document frequency without requiring dense embeddings."},
+  {"id": "q005", "query": "What is context drop in RAG?", "ground_truth": "Context drop happens when the correct chunk is retrieved but the model ignores it during generation."},
+  {"id": "q006", "query": "What are the main components of a Transformer?", "ground_truth": "Transformers consist of an encoder and decoder, each with multi-head attention and feed-forward sublayers with residual connections."},
+  {"id": "q007", "query": "How does chunk size affect RAG quality?", "ground_truth": "Smaller chunks improve retrieval precision but may lose context; larger chunks provide more context but reduce recall."},
+  {"id": "q008", "query": "What metrics are used to evaluate QA systems?", "ground_truth": "Common metrics include Exact Match, F1 score, ROUGE, and BERTScore."},
+  {"id": "q009", "query": "What is multi-hop reasoning failure?", "ground_truth": "Multi-hop reasoning failure occurs when the answer requires connecting information across multiple chunks and the model fails to do so."},
+  {"id": "q010", "query": "What is FAISS used for?", "ground_truth": "FAISS is a vector database used for efficient similarity search over high-dimensional document embeddings."}
+]

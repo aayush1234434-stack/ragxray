@@ -1,0 +1,39 @@
+===DOC_START===
+TITLE: Retrieval-Augmented Generation (RAG)
+RAG is a technique that combines a retrieval system with a language model. Given a query, a retriever fetches relevant documents from a knowledge base. These documents are then passed as context to the language model, which generates an answer grounded in the retrieved content. RAG reduces hallucination by anchoring generation to external knowledge. The retriever is typically a dense vector search system like FAISS or a sparse system like BM25.
+===DOC_END===
+
+===DOC_START===
+TITLE: Common RAG Failure Modes
+RAG pipelines can fail in several ways. Retrieval drift occurs when retrieved chunks are topically related but do not contain the answer. Context drop happens when the correct chunk is retrieved but the model ignores it. Hallucination refers to the model generating plausible but factually incorrect information not supported by context. Multi-hop reasoning failure occurs when the answer requires connecting information across multiple chunks and the model fails to do so.
+===DOC_END===
+
+===DOC_START===
+TITLE: Introduction to Transformer Architecture
+Transformers are a type of deep learning model introduced in the paper "Attention is All You Need" by Vaswani et al. in 2017. They rely entirely on self-attention mechanisms. The encoder processes input sequences while the decoder generates output sequences. Each layer consists of multi-head attention and feed-forward sublayers with residual connections and layer normalisation.
+===DOC_END===
+
+===DOC_START===
+TITLE: Vector Databases and Embeddings
+Vector databases store high-dimensional embeddings of documents for efficient similarity search. Common options include FAISS, Pinecone, Weaviate, and Chroma. Documents are embedded using models like sentence-transformers. At query time, the query is embedded and the nearest neighbours are retrieved using cosine similarity. Chunk size and overlap are critical hyperparameters that affect retrieval quality.
+===DOC_END===
+
+===DOC_START===
+TITLE: BM25 and Sparse Retrieval
+BM25 is a bag-of-words retrieval function that ranks documents based on term frequency and inverse document frequency. It is a strong baseline for keyword-heavy queries. Unlike dense retrieval, BM25 does not require GPU inference and is highly interpretable. Hybrid retrieval systems combine BM25 scores with dense embedding similarity for improved recall. The rank_bm25 Python library provides an easy-to-use implementation.
+===DOC_END===
+
+===DOC_START===
+TITLE: Chunking Strategies for RAG
+Document chunking is a critical step in RAG pipelines. Fixed-size chunking splits documents into equal-length segments with optional overlap. Semantic chunking groups sentences by embedding similarity. The choice of chunk size affects the trade-off between context richness and retrieval precision. Smaller chunks improve precision but may lose context; larger chunks provide more context but reduce recall.
+===DOC_END===
+
+===DOC_START===
+TITLE: Evaluation Metrics for QA Systems
+Question answering systems are evaluated using metrics like Exact Match, F1 score, ROUGE, and BERTScore. For RAG systems, additional metrics like context relevance, faithfulness, and answer relevance are used in frameworks like RAGAS. TruLens measures hallucination rates in RAG pipelines.
+===DOC_END===
+
+===DOC_START===
+TITLE: LangChain Framework Overview
+LangChain is a Python framework for building applications with language models. It provides abstractions for chains, agents, memory, retrievers, and document loaders. The RetrievalQA chain connects a retriever to a language model. LCEL (LangChain Expression Language) enables composable, declarative chain construction.
+===DOC_END===

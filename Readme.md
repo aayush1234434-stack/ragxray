@@ -25,6 +25,7 @@ RAG pipelines fail in structured, repeatable ways. Instead of eyeballing outputs
 
 <!-- SCREENSHOT: Crop the top metrics row from the dashboard -->
 
+
 | Metric | Run: hybrid/faithful |
 |---|---|
 | Pass Rate | **65%** |
